@@ -1,0 +1,209 @@
+﻿.body-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+input, select, textarea {
+	max-width: 350px;
+}
+
+.navbar {
+	border-bottom: 2px solid #3B773E;
+}
+
+#npGeekLogo {
+	display: block;
+	max-width: 20%;
+	min-width: 150px;
+}
+
+#allParks {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.parkImage {
+	width: 45%;
+	display: flex;
+	align-items: center;
+}
+
+.parkImage img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.parkSummary {
+	width: 45%;
+}
+
+.park {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-bottom: 1px solid #808080;
+}
+
+.parkDetailImage {
+	width: 20%;
+}
+
+.parkDataTable {
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.parkDataTable table {
+	width: 40%;
+}
+
+.weatherTable {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.restOfWeek {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	width: 60%;
+}
+
+.dailyWeather {
+	width: 25%;
+}
+
+.todaysWeather {
+	width: 30%;
+}
+
+.weatherImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width:50%;
+	height: auto;
+}
+
+.activityOptions {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.activityChoice {
+	display: flex;
+	padding-right: 20px;
+	padding-left: 5px;
+	padding-right: 20px;
+}
+
+.error {
+	color: red;
+}
+
+#favoriteParks img {
+	height: 75px;
+	width: auto;
+}
+
+#detailImage {
+	padding-top: 15px;
+}
+
+p.high {
+	margin-bottom: -5px;
+}
+
+.tempButtons {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: middle;
+}
+
+
+.favoritesTable {
+	max-width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+	#allParks {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.parkImage {
+		width: 90%;
+		display: block;
+	}
+	.parkImage img {
+		width: 100%;
+		object-fit: cover;
+	}
+	.parkSummary {
+		width: 90%;
+	}
+	.parkSummary h3, h5 {
+		text-align: center;
+	}
+	.park {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 10px;
+	}
+	.parkDataTable {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.parkDataTable table {
+		width: 90%;
+	}
+	.todaysWeather {
+		width: 90%;
+	}
+	.restOfWeek {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 90%;
+	}
+	.parkDetailImage {
+		width: 90%;
+	}
+	.detailAbout {
+		font-weight: normal;
+		font-size: 1.15em;
+		margin-bottom: 10px;
+	}
+	.parkData td {
+		text-align: right;
+	}
+	.dailyWeather p {
+		font-size: .75em;
+	}
+	.favoritesTable {
+		max-width: 95%;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	#npGeekLogo {
+		display: block;
+		max-width: 100%;
+	}
+	nav.navbar {
+		flex-direction: column;
+	}
+	div.navbar-brand {
+		justify-content: center;
+		width: 60%;
+	}
+	td>h5 {
+		font-size: .85em;
+	}
+}
