@@ -8,6 +8,8 @@
 	<packaging>war</packaging>
 	<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -73,7 +75,8 @@
 				<artifactId>heroku-maven-plugin</artifactId>
 				<version>3.0.1</version>
 				<configuration>
-				<appName>ss-te-npGeek</appName>
+					<appName>ss-te-npgeek</appName>
+					<warFile>target/te-np-geek-1.0.war</warFile>
 				</configuration>
 			</plugin>
 		</plugins>
